@@ -1,14 +1,14 @@
 =head1 NAME
 
-A simple utility of LZMA compression/decompression
+Compress::LZMA::Simple - simple utility of LZMA compression/decompression
 
 
 =head1 SYNOPSYS
 
- use Compress::LZMA::Simple;
+ use Compress::LZMA::Simple qw(compress decompress);
  my $original = "LZMA stands for Lempel-Ziv-Markov chain-Algorithm.";
- my $compressed = Compress::LZMA::Simple::compress(\$original);
- my $decompressed = Compress::LZMA::Simple::decompress($compressed);
+ my $compressed = compress(\$original);
+ my $decompressed = decompress($compressed);
  printf("%s\n", $$decompressed);
 
 

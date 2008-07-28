@@ -6,7 +6,7 @@ use warnings;
 require Exporter;
 require XSLoader;
 use base qw(Exporter);
-our $VERSION = '0.1';
+our $VERSION = '0.2';
 our @EXPORT_OK = qw(compress decompress);
 XSLoader::load('Compress::LZMA::Simple', $VERSION);
 
